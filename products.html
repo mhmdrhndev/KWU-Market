@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Produk — KWU Market</title>
+  <meta name="description" content="Katalog produk mahasiswa wirausaha KWU Market. Kuliner, fashion, kerajinan, dan jasa digital langsung dari kampus." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="index.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231b4332'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' fill='%23e8ece9' font-family='serif' font-size='18' font-weight='bold'%3EK%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo">
+        <div class="navbar__logo-icon">K</div>
+        <div class="navbar__logo-text">KWU <span>Market</span></div>
+      </a>
+      <div class="navbar__links" id="navLinks">
+        <a href="index.html" class="navbar__link">Home</a>
+        <a href="products.html" class="navbar__link active">Produk</a>
+      </div>
+      <button class="navbar__toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Products Section -->
+  <section class="section products-page">
+    <div class="section__inner">
+      <div class="section__header" style="margin-bottom: 3rem;">
+        <p class="section__eyebrow reveal">Katalog</p>
+        <h1 class="section__title reveal reveal-delay-1">Produk Mahasiswa</h1>
+        <p class="section__description reveal reveal-delay-2">
+          Setiap produk dibuat dan dijual langsung oleh mahasiswa dari Divisi Kewirausahaan.
+        </p>
+      </div>
+
+      <!-- Controls -->
+      <div class="products__controls reveal reveal-delay-3">
+        <div class="products__search">
+          <span class="products__search-icon">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </span>
+          <input
+            type="text"
+            class="products__search-input"
+            id="searchInput"
+            placeholder="Cari produk atau nama penjual..."
+            autocomplete="off"
+          />
+        </div>
+        <div class="products__filter-tabs" id="filterTabs">
+          <button class="products__filter-tab active" data-category="all">Semua</button>
+          <button class="products__filter-tab" data-category="food">Kuliner</button>
+          <button class="products__filter-tab" data-category="fashion">Fashion</button>
+          <button class="products__filter-tab" data-category="craft">Kerajinan</button>
+          <button class="products__filter-tab" data-category="digital">Digital</button>
+        </div>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="products__grid" id="productsGrid">
+        <!-- Populated by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__top">
+        <div>
+          <div class="footer__brand-name">KWU <span>Market</span></div>
+          <p class="footer__brand-desc">
+            Platform resmi Divisi Kewirausahaan Mahasiswa untuk memfasilitasi wirausaha muda kampus.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">Navigasi</h4>
+          <div class="footer__links">
+            <a href="index.html" class="footer__link">Home</a>
+            <a href="products.html" class="footer__link">Produk</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">Organisasi</h4>
+          <div class="footer__links">
+            <span class="footer__link">Divisi Kewirausahaan Mahasiswa</span>
+            <span class="footer__link">Kampus Universitas</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>&copy; 2026 KWU Market. All rights reserved.</span>
+        <span>Dibuat oleh mahasiswa wirausaha</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
