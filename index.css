@@ -807,7 +807,7 @@ ol {
 }
 
 .footer__brand-name span {
-  color: var(--text-primary);
+  color: inherit;
 }
 
 .footer__brand-desc {
