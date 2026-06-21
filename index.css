@@ -29,10 +29,10 @@
   --neumo-flat-hover: 12px 12px 24px var(--shadow-dark), -12px -12px 24px var(--shadow-light);
   --neumo-sunken: inset 6px 6px 12px var(--shadow-dark), inset -6px -6px 12px var(--shadow-light);
   --neumo-sunken-active: inset 8px 8px 16px var(--shadow-dark), inset -8px -8px 16px var(--shadow-light);
-  
+
   --neumo-sm: 4px 4px 8px var(--shadow-dark), -4px -4px 8px var(--shadow-light);
   --neumo-sm-sunken: inset 3px 3px 6px var(--shadow-dark), inset -3px -3px 6px var(--shadow-light);
-  
+
   --border-subtle: rgba(255, 255, 255, 0.4);
 
   /* Typography */
@@ -128,7 +128,8 @@ button {
   outline: none;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
@@ -259,7 +260,7 @@ ul, ol {
   background: var(--text-primary);
   border-radius: var(--radius-full);
   transition: transform var(--duration-normal) var(--ease-out),
-              opacity var(--duration-fast) var(--ease-out);
+    opacity var(--duration-fast) var(--ease-out);
 }
 
 .navbar__toggle.open span:nth-child(1) {
@@ -719,9 +720,9 @@ ul, ol {
   max-height: 0;
   opacity: 0;
   transition: max-height var(--duration-normal) var(--ease-out),
-              opacity var(--duration-normal) var(--ease-out),
-              margin var(--duration-normal) var(--ease-out),
-              padding var(--duration-normal) var(--ease-out);
+    opacity var(--duration-normal) var(--ease-out),
+    margin var(--duration-normal) var(--ease-out),
+    padding var(--duration-normal) var(--ease-out);
 }
 
 .contact-reveal.open {
@@ -806,7 +807,7 @@ ul, ol {
 }
 
 .footer__brand-name span {
-  color: var(--accent-gold);
+  color: var(--text-primary);
 }
 
 .footer__brand-desc {
@@ -867,10 +868,21 @@ ul, ol {
   transform: translateY(0);
 }
 
-.reveal-delay-1 { transition-delay: 0.08s; }
-.reveal-delay-2 { transition-delay: 0.16s; }
-.reveal-delay-3 { transition-delay: 0.24s; }
-.reveal-delay-4 { transition-delay: 0.32s; }
+.reveal-delay-1 {
+  transition-delay: 0.08s;
+}
+
+.reveal-delay-2 {
+  transition-delay: 0.16s;
+}
+
+.reveal-delay-3 {
+  transition-delay: 0.24s;
+}
+
+.reveal-delay-4 {
+  transition-delay: 0.32s;
+}
 
 
 /* --- Empty State --- */
@@ -927,7 +939,7 @@ ul, ol {
     opacity: 0;
     pointer-events: none;
     transition: transform var(--duration-normal) var(--ease-out),
-                opacity var(--duration-normal) var(--ease-out);
+      opacity var(--duration-normal) var(--ease-out);
   }
 
   .navbar__links.open {
@@ -1006,4 +1018,3 @@ ul, ol {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
