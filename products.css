@@ -1,0 +1,187 @@
+/* ============================================
+   KWU MARKET — Products Page Styles
+   ============================================ */
+
+.products-section {
+  padding: 40px 24px 80px;
+  min-height: 70vh;
+}
+
+.products-section__inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.products-section__header {
+  margin-bottom: 32px;
+}
+
+.products-section__title {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+
+.products-section__desc {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+/* --- Filter Bar --- */
+.filter-bar {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  padding: 8px 20px;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  background: var(--white);
+  transition: all 0.2s;
+}
+
+.filter-btn:hover {
+  border-color: var(--blue);
+  color: var(--blue);
+}
+
+.filter-btn--active {
+  background: var(--blue);
+  color: var(--white);
+  border-color: var(--blue);
+}
+
+.filter-btn--active:hover {
+  background: var(--blue-dark);
+  border-color: var(--blue-dark);
+  color: var(--white);
+}
+
+/* --- Products Grid --- */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+/* --- Empty State --- */
+.products-empty {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 80px 24px;
+}
+
+.products-empty__icon {
+  margin-bottom: 16px;
+  color: var(--text-muted);
+  opacity: 0.5;
+}
+
+.products-empty__text {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+}
+
+.products-empty__hint {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+/* --- Contact Reveal --- */
+.contact-reveal {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  transition: max-height 0.3s ease, opacity 0.3s ease, margin 0.3s ease;
+}
+
+.contact-reveal.open {
+  max-height: 100px;
+  opacity: 1;
+  margin-top: 12px;
+}
+
+.contact-reveal__inner {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 12px;
+  background: var(--bg);
+  border-radius: var(--radius);
+}
+
+.contact-reveal__avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--blue-light);
+  color: var(--blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.contact-reveal__name {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.contact-reveal__phone {
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+/* --- Product Card Contact Button --- */
+.btn-contact {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--blue);
+  background: var(--white);
+  transition: all 0.2s;
+  margin-top: 12px;
+}
+
+.btn-contact:hover {
+  background: var(--blue-light);
+  border-color: var(--blue);
+}
+
+@media (max-width: 768px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .filter-bar {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    padding-bottom: 4px;
+  }
+
+  .filter-bar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .filter-btn {
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+}
